@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Note
 from .serializers import NoteSerializer
-
+from rest_framework_swagger.views import get_swagger_view
 
 @api_view(['GET'])
 def getRoutes(req):
